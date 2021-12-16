@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/child-check-lists",
+      "handler": "child-check-list.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/child-check-lists/count",
+      "handler": "child-check-list.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/child-check-lists/:id",
+      "handler": "child-check-list.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/child-check-lists",
+      "handler": "child-check-list.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/child-check-lists/:id",
+      "handler": "child-check-list.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/child-check-lists/:id",
+      "handler": "child-check-list.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

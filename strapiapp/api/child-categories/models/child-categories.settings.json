@@ -1,0 +1,25 @@
+{
+  "kind": "collectionType",
+  "collectionName": "child_categories",
+  "info": {
+    "name": "Child Categories",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "name": {
+      "type": "string",
+      "unique": true,
+      "required": true
+    },
+    "super_category": {
+      "via": "child_categories",
+      "model": "super-categories"
+    }
+  }
+}

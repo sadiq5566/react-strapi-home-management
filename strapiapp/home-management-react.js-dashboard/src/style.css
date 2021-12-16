@@ -1,0 +1,49 @@
+.lds-dual-ring {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+}
+.lds-dual-ring:after {
+  content: " ";
+  display: block;
+  width: 15px;
+  height: 15px;
+  margin: 4px 0px;
+  border-radius: 50%;
+  border: 2px solid #fff;
+  border-color: #fff transparent #fff transparent;
+  animation: lds-dual-ring 1.2s linear infinite;
+}
+@keyframes lds-dual-ring {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+.responsive-table{ 
+    display: block;
+    width: 100% !important;
+    overflow-x: auto;
+    white-space: nowrap;
+} 
+
+
+
+.table td, .table th { 
+    white-space: unset;
+}
+.checklist-quantity{
+  display: flex;
+}
+
+.checklist-quantity button{
+  border: none;
+  width: 44px;
+}
+
+.checklist-quantity input{
+  text-align: center;
+  background-color: #fff !important;
+}

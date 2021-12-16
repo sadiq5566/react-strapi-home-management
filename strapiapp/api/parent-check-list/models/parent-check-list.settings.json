@@ -1,0 +1,25 @@
+{
+  "kind": "collectionType",
+  "collectionName": "parent_check_lists",
+  "info": {
+    "name": "Parent Check List",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "title": {
+      "type": "string",
+      "unique": true,
+      "required": true
+    },
+    "child_check_lists": {
+      "via": "parent_check_list",
+      "collection": "child-check-list"
+    }
+  }
+}
